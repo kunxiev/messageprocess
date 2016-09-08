@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<reports xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="xmlreportparse.xsd">
+	<report name="1003" type="xml" description="民生跨行代扣回复报文">
+		<root name="Ans" from="Ans">
+			<field name="Version" from="Version" format="^[.\w]+$" isNull="true" zhName ="版本号" description="版本号"/>
+			<field name="SettDate" from="SettDate" format="^\d{8}$" isNull="true" zhName ="清算日期" description="清算日期"/>
+			<field name="TransTime" from="TransTime" format="^\d{6}$" isNull="true" zhName ="交易时间" description="交易时间"/>
+			<field name="ReqSerialNo" from="ReqSerialNo" format="^[\w]+$" isNull="true" zhName ="请求流水号" description="请求流水号"/>
+			<field name="ExecType" from="ExecType" format="^[ESR]{1}$" isNull="true" zhName ="响应类型" description="响应类型"/>
+			<field name="ExecCode" from="ExecCode" format="^\w{6}$" isNull="true" zhName ="响应代码" description="响应代码"/>
+			<field name="ExecMsg" from="ExecMsg" isNull="true" zhName ="响应描述" description="响应描述"/>
+			<field name="MerId" from="MerId" isNull="true" zhName ="商户号" description="商户号"/>
+			<field name="PaySerialNo" from="PaySerialNo" format="^[\w]+$" isNull="true" zhName ="平台处理流水号" description="平台处理流水号"/>
+			<field name="Resv" from="Resv" isNull="true" zhName ="备用" description="备用"/>
+		</root>
+	</report>	
+
+	<report name="3003" type="xml" description="民生跨行代扣查询回复报文">
+		<root name="Ans" from="Ans">
+			<field name="Version" from="Version" format="^[.\w]+$" isNull="true" zhName ="版本号" description="版本号"/>   
+			<field name="SettDate" from="SettDate" format="^\d{8}$" isNull="true" zhName ="清算日期" description="清算日期"/>   
+			<field name="TransTime" from="TransTime" format="^\d{6}$" isNull="true" zhName ="交易时间" description="交易时间"/>   
+			<field name="ReqSerialNo" from="ReqSerialNo" format="^[\w]+$" isNull="true" zhName ="请求流水号" description="请求流水号"/>   
+			<field name="ExecType" from="ExecType" format="^[ESR]{1}$" isNull="true" zhName ="响应类型" description="响应类型"/>   
+			<field name="ExecCode" from="ExecCode" format="^\w{6}$" isNull="true" zhName ="响应代码" description="响应代码"/>   
+			<field name="ExecMsg" from="ExecMsg" isNull="true" zhName ="响应描述" description="响应描述"/>   
+			<field name="MerId" from="MerId" isNull="true" zhName ="商户号" description="商户号"/>   
+			<field name="OriReqSerialNo" from="OriReqSerialNo" format="^[\w]+$" isNull="true" zhName ="原交易流水号" description="原交易流水号"/>   
+			<field name="OriSettDate" from="OriSettDate" format="^\d{8}$" isNull="true" zhName ="原交易清算日期" description="原交易清算日期"/>   
+			<field name="OriTransTime" from="OriTransTime" format="^\d{6}$" isNull="true" zhName ="原交易处理时间" description="原交易处理时间"/>   
+			<field name="OriPaySerialNo" from="OriPaySerialNo" format="^[\w]+$" isNull="true" zhName ="原交易平台流水号" description="原交易平台流水号"/>   
+			<field name="OriExecType" from="OriExecType" format="^[ESR]{1}$" isNull="true" zhName ="原交易响应类型" description="原交易响应类型"/>   
+			<field name="OriExecCode" from="OriExecCode" format="^\w{6}$" isNull="true" zhName ="原交易响应代码" description="原交易响应代码"/>   
+			<field name="OriExecMsg" from="OriExecMsg" isNull="true" zhName ="原交易响应描述" description="原交易响应描述"/>   
+			<field name="Resv" from="Resv" isNull="true" zhName ="备用域" description="备用域"/>   
+		</root>
+	</report>	
+
+	<report name="1004" type="xml" description="民生实名认证回复报文">
+		<root name="Ans" from="Ans">			
+			<field name="Version" from="Version" format="^[.\w]+$" isNull="true" zhName ="版本号" description="版本号"/>   
+			<field name="SettDate" from="SettDate" format="^\d{8}$" isNull="true" zhName ="清算日期" description="清算日期"/>   
+			<field name="TransTime" from="TransTime" format="^\d{6}$" isNull="true" zhName ="交易时间" description="交易时间"/>   
+			<field name="ReqSerialNo" from="ReqSerialNo" format="^[\w]+$" isNull="true" zhName ="请求流水号" description="请求流水号"/>   
+			<field name="ExecType" from="ExecType" format="^[ESR]{1}$" isNull="true" zhName ="响应类型" description="响应类型"/>   
+			<field name="ExecCode" from="ExecCode" format="^\w{6}$" isNull="true" zhName ="响应代码" description="响应代码"/>   
+			<field name="ExecMsg" from="ExecMsg" isNull="true" zhName ="响应描述" description="响应描述"/>   
+			<field name="ValidateStatus" from="ValidateStatus" format="^\w{2}$" isNull="true" zhName ="认证状态" description="认证状态"/>   
+			<field name="PaySerialNo" from="PaySerialNo" format="^[\w]+$" isNull="true" zhName ="平台处理流水号" description="平台处理流水号"/>   
+			<field name="Resv" from="Resv" isNull="true" zhName ="备用域" description="备用域"/>   
+		</root>
+	</report>	
+
+	<report name="3004" type="xml" description="民生实名认证查询回复报文">
+		<root name="Ans" from="Ans">			
+			<field name="Version" from="Version" format="^[.\w]+$" isNull="true" zhName ="版本号" description="版本号"/>   
+			<field name="SettDate" from="SettDate" format="^\d{6}$" isNull="true" zhName ="清算日期" description="清算日期"/>   
+			<field name="TransTime" from="TransTime" format="^\d{6}$" isNull="true" zhName ="交易时间" description="交易时间"/>   
+			<field name="ReqSerialNo" from="ReqSerialNo" format="^[\w]+$" isNull="true" zhName ="请求流水号" description="请求流水号"/>   
+			<field name="ExecType" from="ExecType" format="^[ESR]{1}$" isNull="true" zhName ="响应类型" description="响应类型"/>   
+			<field name="ExecCode" from="ExecCode" format="^\w{6}$" isNull="true" zhName ="响应代码" description="响应代码"/>   
+			<field name="ExecMsg" from="ExecMsg" isNull="true" zhName ="响应描述" description="响应描述"/>   
+			<field name="ValidateNo" from="ValidateNo" format="^[\w]+$" isNull="true" zhName ="认证流水号" description="认证流水号"/>   
+			<field name="ValidateStatus" from="ValidateStatus" format="^\w{2}$" isNull="true" zhName ="认证状态" description="认证状态"/>   
+			<field name="MerId" from="MerId" format="^[\w]+$" isNull="true" zhName ="商户号" description="商户号"/>   
+			<field name="OriReqSerialNo" from="OriReqSerialNo" format="^[\w]+$" isNull="true" zhName ="原交易流水号" description="原交易流水号"/>   
+			<field name="OriSettDate" from="OriSettDate" format="^\d{8}$" isNull="true" zhName ="原交易清算日期" description="原交易清算日期"/>   
+			<field name="OriTransTime" from="OriTransTime" format="^\d{6}$" isNull="true" zhName ="原交易处理时间" description="原交易处理时间"/>   
+			<field name="OriPaySerialNo" from="OriPaySerialNo" format="^[\w]+$" isNull="true" zhName ="原交易平台流水号" description="原交易平台流水号"/>   
+			<field name="OriExecType" from="OriExecType" format="^[ESR]{1}$" isNull="true" zhName ="原交易响应类型" description="原交易响应类型"/>   
+			<field name="OriExecCode" from="OriExecCode" format="^\w{6}$" isNull="true" zhName ="原交易响应代码" description="原交易响应代码"/>   
+			<field name="OriExecMsg" from="OriExecMsg" isNull="true" zhName ="原交易响应描述" description="原交易响应描述"/>   
+			<field name="Resv" from="Resv" isNull="true" zhName ="备用域" description="备用域"/>   
+		</root>
+	</report>	
+
+		
+	<report name="130071001" type="xml" description="民生本行代扣回复报文">
+		<root name="TRAN_RESP" from="TRAN_RESP">
+			<field name="RESP_TYPE" from="RESP_TYPE" format="^[ESR]{1}$" isNull="true" zhName ="应答码类型" description="应答码类型"/> 
+			<field name="RESP_CODE" from="RESP_CODE" format="^\w{8}$" isNull="true" zhName ="应答码" description="应答码"/> 
+			<field name="RESP_MSG" from="RESP_MSG" isNull="true" zhName ="应答描述" description="应答描述"/> 
+			<field name="COMPANY_ID" from="COMPANY_ID" format="^[\w]+$" isNull="true" zhName ="合作机构id" description="合作机构id"/> 
+			<field name="MCHNT_CD" from="MCHNT_CD" format="^[\w]+$" isNull="true" zhName ="商户编号" description="商户编号"/> 
+			<field name="TRAN_DATE" from="TRAN_DATE" format="^\d{8}$" isNull="true" zhName ="交易日期" description="交易日期"/> 
+			<field name="TRAN_TIME" from="TRAN_TIME" format="^\d{6}$" isNull="true" zhName ="交易时间" description="交易时间"/> 
+			<field name="TRAN_ID" from="TRAN_ID" format="^[\w]+$" isNull="true" zhName ="渠道交易流水号" description="渠道交易流水号"/> 
+			<field name="BANK_TRAN_ID" from="BANK_TRAN_ID" format="^[\w]+$" isNull="true" zhName ="银行处理流水号" description="银行处理流水号"/> 
+			<field name="BANK_TRAN_DATE" from="BANK_TRAN_DATE" format="^\d{8}$" isNull="true" zhName ="银行交易日期" description="银行交易日期"/> 
+			<field name="RESV" from="RESV" isNull="true" zhName ="备用" description="备用"/> 
+		</root>
+	</report>	
+
+	<report name="130073001" type="xml" description="民生本行代扣查询回复报文">
+		<root name="TRAN_RESP" from="TRAN_RESP">
+			<field name="RESP_TYPE" from="RESP_TYPE" format="^[ESR]{1}$" isNull="true" zhName ="应答码类型" description="应答码类型"/> 
+			<field name="RESP_CODE" from="RESP_CODE" format="^\w{8}$" isNull="true" zhName ="应答码" description="应答码"/> 
+			<field name="RESP_MSG" from="RESP_MSG" isNull="true" zhName ="应答描述" description="应答描述"/> 
+			<field name="COMPANY_ID" from="COMPANY_ID" format="^[\w]+$" isNull="true" zhName ="合作机构id" description="合作机构id"/> 
+			<field name="MCHNT_CD" from="MCHNT_CD" format="^[\w]+$" isNull="true" zhName ="商户编号" description="商户编号"/> 
+			<field name="TRAN_DATE" from="TRAN_DATE" format="^\d{8}$" isNull="true" zhName ="交易日期" description="交易日期"/> 
+			<field name="TRAN_TIME" from="TRAN_TIME" format="^\d{6}$" isNull="true" zhName ="交易时间" description="交易时间"/> 
+			<field name="TRAN_ID" from="TRAN_ID" format="^[\w]+$" isNull="true" zhName ="渠道流水号" description="渠道流水号"/> 
+			<field name="ORI_TRAN_DATE" from="ORI_TRAN_DATE" format="^\d{8}$" isNull="true" zhName ="原交易日期" description="原交易日期"/> 
+			<field name="ORI_TRAN_ID" from="ORI_TRAN_ID" format="^[\w]+$" isNull="true" zhName ="原渠道流水号" description="原渠道流水号"/> 
+			<field name="ORI_BANK_TRAN_ID" from="ORI_BANK_TRAN_ID" format="^[\w]+$" isNull="true" zhName ="银行处理流水号" description="银行处理流水号"/> 
+			<field name="ORI_BANK_TRAN_DATE" from="ORI_BANK_TRAN_DATE" format="^\d{8}$" isNull="true" zhName ="银行交易日期" description="银行交易日期"/> 
+			<field name="ORI_TRAN_FLAG" from="ORI_TRAN_FLAG" format="^\d{1}$" isNull="true" zhName ="原交易处理状态" description="原交易处理状态"/> 
+			<field name="ORI_RESP_CODE" from="ORI_RESP_CODE" format="^[\w]+$" isNull="true" zhName ="原交易应答码" description="原交易应答码"/> 
+			<field name="ORI_RESP_MSG" from="ORI_RESP_MSG" format="^[\w\u4e00-\u9fa5]+$" isNull="true" zhName ="原交易应答描述" description="原交易应答描述"/> 
+			<field name="RESV" from="RESV" isNull="true" zhName ="备用" description="备用"/> 
+		</root>
+	</report>	
+
+	<report name="130073003" type="xml" description="民生本行代扣对账回复报文">
+		<root name="TRAN_RESP" from="TRAN_RESP">
+			<field name="RESP_TYPE" from="RESP_TYPE" format="^[ESR]{1}$" isNull="true" zhName ="应答码类型" description="应答码类型"/> 
+			<field name="RESP_CODE" from="RESP_CODE" format="^\w{8}$" isNull="true" zhName ="应答码" description="应答码"/> 
+			<field name="RESP_MSG" from="RESP_MSG" isNull="true" zhName ="应答描述" description="应答描述"/> 
+		</root>
+	</report>		
+	
+</reports>

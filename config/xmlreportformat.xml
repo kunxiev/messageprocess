@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<reports xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="xmlreportformat.xsd">
+	
+	<report name="1003" description="民生跨行代扣请求报文" type="xml" encoding="UTF-8">
+		<root name="Req" from="Req">
+			<field name="Version" from="Version" isNull="false" zhName ="版本号" description="版本号"/> 
+			<field name="TransDate" from="TransDate" isNull="false" zhName ="交易日期" description="交易日期"/> 
+			<field name="TransTime" from="TransTime" isNull="false" zhName ="交易时间" description="交易时间"/> 
+			<field name="SerialNo" from="SerialNo" isNull="false" zhName ="流水号" description="流水号"/> 
+			<field name="MerId" from="MerId" isNull="true" zhName ="商户号" description="商户号"/> 
+			<field name="MerName" from="MerName" isNull="true" zhName ="商户名（机构名称）" description="商户名（机构名称）"/> 
+			<field name="BizType" from="BizType" isNull="false" zhName ="业务类型" description="业务类型"/> 
+			<field name="BizNo" from="BizNo" isNull="true" zhName ="业务号码" description="业务号码"/> 
+			<field name="BizObjType" from="BizObjType" isNull="false" zhName ="业务对象类型" description="业务对象类型"/> 
+			<field name="PayerAcc" from="PayerAcc" isNull="false" zhName ="付款人账号" description="付款人账号"/> 
+			<field name="PayerName" from="PayerName" isNull="false" zhName ="付款人名称" description="付款人名称"/> 
+			<field name="CardType" from="CardType" isNull="false" zhName ="卡折标志" description="卡折标志"/> 
+			<field name="PayerBankName" from="PayerBankName" isNull="false" zhName ="付款行名称" description="付款行名称"/> 
+			<field name="PayerBankInsCode" from="PayerBankInsCode" isNull="false" zhName ="付款行银联机构号" description="付款行银联机构号"/> 
+			<field name="PayerBankSettleNo" from="PayerBankSettleNo" isNull="true" zhName ="付款行清算联行号" description="付款行清算联行号"/> 
+			<field name="PayerBankSwitchNo" from="PayerBankSwitchNo" isNull="true" zhName ="付款行同城交换号" description="付款行同城交换号"/> 
+			<field name="PayerPhone" from="PayerPhone" isNull="true" zhName ="付款人手机号码" description="付款人手机号码"/> 
+			<field name="TranAmt" from="TranAmt" isNull="false" zhName ="交易金额" description="交易金额"/> 
+			<field name="Currency" from="Currency" isNull="false" zhName ="交易币种" description="交易币种"/> 
+			<field name="CertType" from="CertType" isNull="false" zhName ="开户证件类型" description="开户证件类型"/> 
+			<field name="CertNo" from="CertNo" isNull="false" zhName ="证件号码" description="证件号码"/> 
+			<field name="ProvNo" from="ProvNo" isNull="false" zhName ="付款省份编码" description="付款省份编码"/> 
+			<field name="CityNo" from="CityNo" isNull="true" zhName ="付款城市编码" description="付款城市编码"/> 
+			<field name="AgtNo" from="AgtNo" isNull="true" zhName ="协议编号" description="协议编号"/> 
+			<field name="Purpose" from="Purpose" isNull="false" zhName ="用途说明" description="用途说明"/> 
+			<field name="Postscript" from="Postscript" isNull="true" zhName ="附言说明" description="附言说明"/> 
+		</root>
+	</report>
+
+	<report name="3003" description="民生跨行代扣查询请求报文" type="xml" encoding="UTF-8">
+		<root name="Req" from="Req">	
+			<field name="Version" from="Version" isNull="false" zhName ="版本号" description="版本号"/> 
+			<field name="TransDate" from="TransDate" isNull="false" zhName ="交易日期" description="交易日期"/> 
+			<field name="TransTime" from="TransTime" isNull="false" zhName ="交易时间" description="交易时间"/> 
+			<field name="SerialNo" from="SerialNo" isNull="false" zhName ="流水号" description="流水号"/> 
+			<field name="MerId" from="MerId" isNull="true" zhName ="商户号" description="商户号"/> 
+			<field name="OriTransDate" from="OriTransDate" isNull="false" zhName ="原交易日期" description="原交易日期"/> 
+			<field name="OriReqSerialNo" from="OriReqSerialNo" isNull="false" zhName ="原交易流水号" description="原交易流水号"/> 
+			<field name="Resv" from="Resv" isNull="true" zhName ="备用域" description="备用域"/> 
+		</root>
+	</report>
+
+	<report name="1004" description="民生实名认证请求报文" type="xml" encoding="UTF-8">
+		<root name="Req" from="Req">
+			<field name="Version" from="Version" isNull="false" zhName ="版本号" description="版本号"/> 
+			<field name="TransDate" from="TransDate" isNull="false" zhName ="交易日期" description="交易日期"/> 
+			<field name="TransTime" from="TransTime" isNull="false" zhName ="交易时间" description="交易时间"/> 
+			<field name="SerialNo" from="SerialNo" isNull="false" zhName ="流水号" description="流水号"/> 
+			<field name="MerId" from="MerId" isNull="true" zhName ="商户号" description="商户号"/> 
+			<field name="MerName" from="MerName" isNull="true" zhName ="商户名（机构名称）" description="商户名（机构名称）"/> 
+			<field name="CardType" from="CardType" isNull="false" zhName ="卡折标志" description="卡折标志"/> 
+			<field name="AccNo" from="AccNo" isNull="false" zhName ="账户号" description="账户号"/> 
+			<field name="AccName" from="AccName" isNull="true" zhName ="账户名" description="账户名"/> 
+			<field name="CertType" from="CertType" isNull="true" zhName ="证件类型" description="证件类型"/> 
+			<field name="CertNo" from="CertNo" isNull="true" zhName ="证件号码" description="证件号码"/> 
+			<field name="Phone" from="Phone" isNull="true" zhName ="手机号码" description="手机号码"/> 
+			<field name="PayerBankInsCode" from="PayerBankInsCode" isNull="true" zhName ="付款行银联机构号" description="付款行银联机构号"/> 
+			<field name="ProvNo" from="ProvNo" isNull="true" zhName ="付款行所在省份编码" description="付款行所在省份编码"/> 
+			<field name="Resv" from="Resv" isNull="true" zhName ="备用域" description="备用域"/> 
+		</root>
+	</report>
+
+	<report name="3004" description="民生实名认证查询请求报文" type="xml" encoding="UTF-8">
+		<root name="Req" from="Req">
+			<field name="Version" from="Version" isNull="false" zhName ="版本号" description="版本号"/> 
+			<field name="TransDate" from="TransDate" isNull="false" zhName ="交易日期" description="交易日期"/> 
+			<field name="TransTime" from="TransTime" isNull="false" zhName ="交易时间" description="交易时间"/> 
+			<field name="SerialNo" from="SerialNo" isNull="false" zhName ="流水号" description="流水号"/> 
+			<field name="MerId" from="MerId" isNull="true" zhName ="商户号" description="商户号"/> 
+			<field name="OriTransDate" from="OriTransDate" isNull="false" zhName ="原交易日期" description="原交易日期"/> 
+			<field name="OriReqSerialNo" from="OriReqSerialNo" isNull="false" zhName ="原交易流水号" description="原交易流水号"/> 
+			<field name="Resv" from="Resv" isNull="true" zhName ="备用域" description="备用域"/> 
+		</root>
+	</report>
+
+	
+	<report name="130071001" description="民生本行代扣请求报文" type="xml" encoding="UTF-8">
+		<root name="TRAN_REQ" from="TRAN_REQ">
+			<field name="COMPANY_ID" from="COMPANY_ID" isNull="false" zhName ="合作方id" description="合作方id"/> 
+			<field name="MCHNT_CD" from="MCHNT_CD" isNull="false" zhName ="商户编号" description="商户编号"/> 
+			<field name="TRAN_DATE" from="TRAN_DATE" isNull="false" zhName ="交易日期" description="交易日期"/> 
+			<field name="TRAN_TIME" from="TRAN_TIME" isNull="false" zhName ="交易时间" description="交易时间"/> 
+			<field name="TRAN_ID" from="TRAN_ID" isNull="false" zhName ="渠道流水号" description="渠道流水号"/> 
+			<field name="BUSI_TYPE" from="BUSI_TYPE" isNull="true" zhName ="业务类型" description="业务类型"/> 
+			<field name="BUSI_NO" from="BUSI_NO" isNull="true" zhName ="业务号码" description="业务号码"/> 
+			<field name="CURRENCY" from="CURRENCY" isNull="false" zhName ="交易币种" description="交易币种"/> 
+			<field name="ACC_NO" from="ACC_NO" isNull="false" zhName ="付款人账户号" description="付款人账户号"/> 
+			<field name="ACC_NAME" from="ACC_NAME" isNull="false" zhName ="付款人账户名" description="付款人账户名"/> 
+			<field name="BANK_TYPE" from="BANK_TYPE" isNull="false" zhName ="付款人账户行别" description="付款人账户行别"/> 
+			<field name="BANK_NAME" from="BANK_NAME" isNull="false" zhName ="付款人账户开户行名称" description="付款人账户开户行名称"/> 
+			<field name="TRANS_AMT" from="TRANS_AMT" isNull="false" zhName ="交易金额" description="交易金额"/> 
+			<field name="CERT_TYPE" from="CERT_TYPE" isNull="true" zhName ="证件类型" description="证件类型"/> 
+			<field name="CERT_NO" from="CERT_NO" isNull="true" zhName ="证件号码" description="证件号码"/> 
+			<field name="CHK_FLAG" from="CHK_FLAG" isNull="false" zhName ="户名、证件检查标志" description="户名、证件检查标志"/> 
+			<field name="REMARK" from="REMARK" isNull="false" zhName ="客户流水摘要" description="客户流水摘要"/> 
+			<field name="RESV" from="RESV" isNull="true" zhName ="备用域" description="备用域"/> 
+		</root>
+	</report>
+
+	<report name="130073001" description="民生本行代扣查询请求报文" type="xml" encoding="UTF-8">
+		<root name="TRAN_REQ" from="TRAN_REQ">
+			<field name="COMPANY_ID" from="COMPANY_ID" isNull="false" zhName ="合作方id" description="合作方id"/> 
+			<field name="MCHNT_CD" from="MCHNT_CD" isNull="false" zhName ="商户编号" description="商户编号"/> 
+			<field name="TRAN_DATE" from="TRAN_DATE" isNull="false" zhName ="交易日期" description="交易日期"/> 
+			<field name="TRAN_TIME" from="TRAN_TIME" isNull="false" zhName ="交易时间" description="交易时间"/> 
+			<field name="TRAN_ID" from="TRAN_ID" isNull="false" zhName ="渠道流水号" description="渠道流水号"/> 
+			<field name="ORI_TRAN_DATE" from="ORI_TRAN_DATE" isNull="false" zhName ="原交易日期" description="原交易日期"/> 
+			<field name="ORI_TRAN_ID" from="ORI_TRAN_ID" isNull="false" zhName ="原渠道流水号" description="原渠道流水号"/> 
+			<field name="RESV" from="RESV" isNull="true" zhName ="备用域" description="备用域"/> 
+		</root>
+	</report>
+
+	<report name="130073003" description="民生本行代扣对账请求报文" type="xml" encoding="UTF-8">
+		<root name="TRAN_REQ" from="TRAN_REQ">
+			<field name="COMPANY_ID" from="COMPANY_ID" isNull="false" zhName ="合作方id" description="合作方id"/> 
+			<field name="REC_DATE" from="REC_DATE" isNull="false" zhName ="对账日期" description="对账日期"/>
+		</root>
+	</report>
+	
+</reports>
